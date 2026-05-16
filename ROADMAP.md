@@ -2,7 +2,7 @@
 
 ---
 
-## v0.1 — Foundation ✅ (Current)
+## v0.1 — Foundation (Current)
 *Establish the concept, open the community, working prototype.*
 
 - [x] Publish original concept paper

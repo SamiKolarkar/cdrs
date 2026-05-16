@@ -1,0 +1,107 @@
+<svg viewBox="0 0 700 620" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="layerGrad1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1f4e79"/>
+      <stop offset="100%" stop-color="#2e75b6"/>
+    </linearGradient>
+    <linearGradient id="layerGrad2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0e3d5c"/>
+      <stop offset="100%" stop-color="#1a6090"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="700" height="620" fill="url(#bg)" rx="12"/>
+  <rect width="700" height="620" fill="none" stroke="#30363d" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="350" y="38" text-anchor="middle" fill="#58a6ff" font-size="15" font-weight="bold" letter-spacing="3">CDRS — SYSTEM ARCHITECTURE</text>
+  <text x="350" y="56" text-anchor="middle" fill="#8b949e" font-size="10" letter-spacing="1">Seven-Layer Decision Stack</text>
+  <line x1="60" y1="66" x2="640" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Layer definitions: y, label, sublabel, accent -->
+  <!-- Layer 1 -->
+  <rect x="60" y="82" width="580" height="62" rx="6" fill="url(#layerGrad1)" opacity="0.9"/>
+  <rect x="60" y="82" width="6" height="62" rx="3" fill="#79c0ff"/>
+  <text x="90" y="106" fill="#cdd9e5" font-size="11" font-weight="bold" letter-spacing="1">LAYER 1 — CONSTRAINT LAYER</text>
+  <text x="90" y="124" fill="#8b949e" font-size="10">Extract environment · limits · priorities · risk conditions</text>
+  <text x="626" y="117" fill="#79c0ff" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="144" x2="350" y2="158" stroke="#388bfd" stroke-width="2"/>
+  <polygon points="350,162 344,152 356,152" fill="#388bfd"/>
+
+  <!-- Layer 2 -->
+  <rect x="60" y="162" width="580" height="62" rx="6" fill="url(#layerGrad1)" opacity="0.95"/>
+  <rect x="60" y="162" width="6" height="62" rx="3" fill="#f0883e"/>
+  <text x="90" y="186" fill="#cdd9e5" font-size="11" font-weight="bold" letter-spacing="1">LAYER 2 — WH-CHAIN LAYER  ★ differentiator</text>
+  <text x="90" y="204" fill="#8b949e" font-size="10">WHY → WHAT → WHO → WHEN → WHERE → HOW  (HOW always last)</text>
+  <text x="626" y="197" fill="#f0883e" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="224" x2="350" y2="238" stroke="#388bfd" stroke-width="2"/>
+  <polygon points="350,242 344,232 356,232" fill="#388bfd"/>
+
+  <!-- Layer 3 -->
+  <rect x="60" y="242" width="580" height="62" rx="6" fill="url(#layerGrad2)" opacity="0.95"/>
+  <rect x="60" y="242" width="6" height="62" rx="3" fill="#56d364"/>
+  <text x="90" y="266" fill="#cdd9e5" font-size="11" font-weight="bold" letter-spacing="1">LAYER 3 — ACTION LAYER</text>
+  <text x="90" y="284" fill="#8b949e" font-size="10">Generate decision candidates · retrieve similar past constraint patterns</text>
+  <text x="626" y="277" fill="#56d364" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="304" x2="350" y2="318" stroke="#388bfd" stroke-width="2"/>
+  <polygon points="350,322 344,312 356,312" fill="#388bfd"/>
+
+  <!-- Layer 4 -->
+  <rect x="60" y="322" width="580" height="62" rx="6" fill="url(#layerGrad2)" opacity="0.95"/>
+  <rect x="60" y="322" width="6" height="62" rx="3" fill="#d2a8ff"/>
+  <text x="90" y="346" fill="#cdd9e5" font-size="11" font-weight="bold" letter-spacing="1">LAYER 4 — OUTCOME LAYER</text>
+  <text x="90" y="364" fill="#8b949e" font-size="10">Predict expected effects · estimate success/failure probability per action</text>
+  <text x="626" y="357" fill="#d2a8ff" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="384" x2="350" y2="398" stroke="#388bfd" stroke-width="2"/>
+  <polygon points="350,402 344,392 356,392" fill="#388bfd"/>
+
+  <!-- Layer 5 -->
+  <rect x="60" y="402" width="580" height="62" rx="6" fill="url(#layerGrad2)" opacity="0.95"/>
+  <rect x="60" y="402" width="6" height="62" rx="3" fill="#ff7b72"/>
+  <text x="90" y="426" fill="#cdd9e5" font-size="11" font-weight="bold" letter-spacing="1">LAYER 5 — RISK LAYER</text>
+  <text x="90" y="444" fill="#8b949e" font-size="10">Identify failure conditions · estimate severity · importance weighting</text>
+  <text x="626" y="437" fill="#ff7b72" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="464" x2="350" y2="478" stroke="#388bfd" stroke-width="2"/>
+  <polygon points="350,482 344,472 356,472" fill="#388bfd"/>
+
+  <!-- Layer 6 -->
+  <rect x="60" y="482" width="580" height="62" rx="6" fill="url(#layerGrad1)" opacity="0.9"/>
+  <rect x="60" y="482" width="6" height="62" rx="3" fill="#ffa657"/>
+  <text x="90" y="506" fill="#cdd9e5" font-size="11" font-weight="bold" letter-spacing="1">LAYER 6 — WHY CONSTRUCTION LAYER</text>
+  <text x="90" y="524" fill="#8b949e" font-size="10">benefit_why · risk_why · condition_why · failure_why → dynamic summary</text>
+  <text x="626" y="517" fill="#ffa657" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Arrow -->
+  <line x1="350" y1="544" x2="350" y2="558" stroke="#388bfd" stroke-width="2"/>
+  <polygon points="350,562 344,552 356,552" fill="#388bfd"/>
+
+  <!-- Layer 7 -->
+  <rect x="60" y="562" width="580" height="42" rx="6" fill="#1f4e79" opacity="1"/>
+  <rect x="60" y="562" width="580" height="42" rx="6" fill="none" stroke="#58a6ff" stroke-width="1.5"/>
+  <rect x="60" y="562" width="6" height="42" rx="3" fill="#58a6ff"/>
+  <text x="90" y="580" fill="#e6edf3" font-size="11" font-weight="bold" letter-spacing="1">LAYER 7 — DECISION + LEARNING LAYER</text>
+  <text x="90" y="596" fill="#8b949e" font-size="10">Decide · Execute · Observe · Store · Consolidate patterns</text>
+  <text x="626" y="587" fill="#58a6ff" font-size="20" text-anchor="middle">⬡</text>
+
+  <!-- Footer -->
+  <text x="350" y="615" text-anchor="middle" fill="#484f58" font-size="9">Constraint-Driven Reasoning System (CDRS) · Sami Ahmed Yusuf Kolarkar · 2026 · Apache 2.0</text>
+</svg>

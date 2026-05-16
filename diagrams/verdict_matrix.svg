@@ -1,0 +1,93 @@
+<svg viewBox="0 0 760 480" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowB" markerWidth="7" markerHeight="5" refX="6" refY="2.5" orient="auto">
+      <polygon points="0 0, 7 2.5, 0 5" fill="#8b949e" opacity="0.7"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="760" height="480" fill="url(#bg)" rx="12"/>
+  <rect width="760" height="480" fill="none" stroke="#30363d" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="380" y="36" text-anchor="middle" fill="#58a6ff" font-size="14" font-weight="bold" letter-spacing="3" filter="url(#glow)">DECISION SCORING &amp; VERDICT MATRIX</text>
+  <text x="380" y="54" text-anchor="middle" fill="#8b949e" font-size="10" letter-spacing="1">How benefit score and risk probability map to a decision verdict</text>
+  <line x1="60" y1="64" x2="700" y2="64" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Score formula -->
+  <rect x="160" y="74" width="440" height="30" fill="#161b22" rx="6" stroke="#30363d"/>
+  <text x="380" y="94" text-anchor="middle" fill="#e6edf3" font-size="11" letter-spacing="1">score  =  outcome_score  −  ( risk_probability × safety_weight )</text>
+
+  <!-- Table header -->
+  <rect x="40" y="122" width="680" height="34" fill="#1f4e79" rx="6" opacity="0.9"/>
+  <text x="110" y="144" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" letter-spacing="1">SCORE</text>
+  <text x="265" y="144" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" letter-spacing="1">RISK</text>
+  <text x="430" y="144" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" letter-spacing="1">VERDICT</text>
+  <text x="610" y="144" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" letter-spacing="1">CONFIDENCE RANGE</text>
+  <line x1="180" y1="122" x2="180" y2="400" stroke="#30363d" stroke-width="1"/>
+  <line x1="350" y1="122" x2="350" y2="400" stroke="#30363d" stroke-width="1"/>
+  <line x1="510" y1="122" x2="510" y2="400" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Row 1 - YES -->
+  <rect x="40" y="156" width="680" height="52" fill="#1a4731" rx="4" opacity="0.7"/>
+  <text x="110" y="180" text-anchor="middle" fill="#c3e6cb" font-size="11" font-weight="bold">≥ 6</text>
+  <text x="110" y="196" text-anchor="middle" fill="#8b949e" font-size="9">high benefit</text>
+  <text x="265" y="180" text-anchor="middle" fill="#c3e6cb" font-size="11">≤ 0.20</text>
+  <text x="265" y="196" text-anchor="middle" fill="#8b949e" font-size="9">low risk</text>
+  <rect x="376" y="164" width="108" height="28" fill="#2ea043" rx="5"/>
+  <text x="430" y="182" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" letter-spacing="2">YES</text>
+  <text x="610" y="178" text-anchor="middle" fill="#c3e6cb" font-size="11">0.75 – 0.95</text>
+  <text x="610" y="196" text-anchor="middle" fill="#8b949e" font-size="9">high confidence</text>
+
+  <!-- Row 2 - CONDITIONAL YES -->
+  <rect x="40" y="212" width="680" height="52" fill="#1a3a1a" rx="4" opacity="0.5"/>
+  <text x="110" y="236" text-anchor="middle" fill="#f0dba0" font-size="11" font-weight="bold">≥ 3</text>
+  <text x="110" y="252" text-anchor="middle" fill="#8b949e" font-size="9">moderate benefit</text>
+  <text x="265" y="236" text-anchor="middle" fill="#f0dba0" font-size="11">≤ 0.50</text>
+  <text x="265" y="252" text-anchor="middle" fill="#8b949e" font-size="9">moderate risk</text>
+  <rect x="358" y="220" width="144" height="28" fill="#9a7c2a" rx="5"/>
+  <text x="430" y="238" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" letter-spacing="1">CONDITIONAL YES</text>
+  <text x="610" y="234" text-anchor="middle" fill="#f0dba0" font-size="11">0.50 – 0.85</text>
+  <text x="610" y="252" text-anchor="middle" fill="#8b949e" font-size="9">conditions must hold</text>
+
+  <!-- Row 3 - CONDITIONAL NO -->
+  <rect x="40" y="268" width="680" height="52" fill="#3b1a1a" rx="4" opacity="0.5"/>
+  <text x="110" y="292" text-anchor="middle" fill="#f5c6c6" font-size="11" font-weight="bold">≥ 0</text>
+  <text x="110" y="308" text-anchor="middle" fill="#8b949e" font-size="9">low benefit</text>
+  <text x="265" y="292" text-anchor="middle" fill="#f5c6c6" font-size="11">≤ 0.70</text>
+  <text x="265" y="308" text-anchor="middle" fill="#8b949e" font-size="9">elevated risk</text>
+  <rect x="356" y="276" width="148" height="28" fill="#7c3a3a" rx="5"/>
+  <text x="430" y="294" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold" letter-spacing="1">CONDITIONAL NO</text>
+  <text x="610" y="290" text-anchor="middle" fill="#f5c6c6" font-size="11">0.30 – 0.50</text>
+  <text x="610" y="308" text-anchor="middle" fill="#8b949e" font-size="9">not recommended</text>
+
+  <!-- Row 4 - NO -->
+  <rect x="40" y="324" width="680" height="52" fill="#2d0d0d" rx="4" opacity="0.7"/>
+  <text x="110" y="348" text-anchor="middle" fill="#ff8080" font-size="11" font-weight="bold">&lt; 0</text>
+  <text x="110" y="364" text-anchor="middle" fill="#8b949e" font-size="9">negative score</text>
+  <text x="265" y="348" text-anchor="middle" fill="#ff8080" font-size="11">&gt; 0.70</text>
+  <text x="265" y="364" text-anchor="middle" fill="#8b949e" font-size="9">critical risk</text>
+  <rect x="385" y="332" width="90" height="28" fill="#b94040" rx="5"/>
+  <text x="430" y="350" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="bold" letter-spacing="2">NO</text>
+  <text x="610" y="346" text-anchor="middle" fill="#ff8080" font-size="11">0.10 – 0.30</text>
+  <text x="610" y="364" text-anchor="middle" fill="#8b949e" font-size="9">avoid action</text>
+
+  <!-- Bottom border of table -->
+  <line x1="40" y1="376" x2="720" y2="376" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Safety weight note -->
+  <rect x="40" y="388" width="680" height="40" fill="#161b22" rx="6" stroke="#21262d"/>
+  <text x="380" y="404" text-anchor="middle" fill="#8b949e" font-size="9.5" letter-spacing="1">SAFETY WEIGHT:  high-priority constraints → 10.0  ·  medium → 5.0  ·  low → 2.0</text>
+  <text x="380" y="420" text-anchor="middle" fill="#6a737d" font-size="9">High-priority constraints amplify risk penalties — safety always outweighs speed</text>
+
+  <!-- Attribution -->
+  <text x="380" y="466" text-anchor="middle" fill="#484f58" font-size="8" letter-spacing="1">CDRS · Sami Ahmed Yusuf Kolarkar, 2026 · Apache 2.0</text>
+</svg>

@@ -1,0 +1,166 @@
+[
+  {
+    "constraints": [
+      {
+        "name": "traffic",
+        "value": "medium",
+        "priority": "medium",
+        "category": "environment"
+      },
+      {
+        "name": "visibility",
+        "value": "good",
+        "priority": "high",
+        "category": "environment"
+      },
+      {
+        "name": "road",
+        "value": "highway",
+        "priority": "medium",
+        "category": "environment"
+      },
+      {
+        "name": "weather",
+        "value": "clear",
+        "priority": "low",
+        "category": "environment"
+      },
+      {
+        "name": "safety",
+        "value": "normal",
+        "priority": "high",
+        "category": "safety"
+      }
+    ],
+    "action": "overtake",
+    "goal": "reach destination faster",
+    "verdict": "conditional_yes",
+    "confidence": 0.725,
+    "explanation": "The decision to overtake in a medium traffic situation with good visibility on a highway road is beneficial as it allows for faster travel. However, there is also a 35% chance of encountering a blind turn ahead or high traffic, which can make overtaking dangerous and unsafe.",
+    "result": "success",
+    "timestamp": "2026-05-16T09:14:25.598778+00:00"
+  },
+  {
+    "constraints": [
+      {
+        "name": "memory",
+        "value": "high",
+        "priority": "medium",
+        "category": "resource"
+      },
+      {
+        "name": "time_critical",
+        "value": "yes",
+        "priority": "high",
+        "category": "environment"
+      },
+      {
+        "name": "user_priority",
+        "value": "high",
+        "priority": "high",
+        "category": "environment"
+      },
+      {
+        "name": "cpu_load",
+        "value": "medium",
+        "priority": "medium",
+        "category": "environment"
+      },
+      {
+        "name": "queue_depth",
+        "value": "large",
+        "priority": "medium",
+        "category": "environment"
+      }
+    ],
+    "action": "defer_low_priority",
+    "goal": "meet the deadline without system failure",
+    "verdict": "yes",
+    "confidence": 0.75,
+    "explanation": "This action of deferring low priority tasks will help us meet our deadline without risking system failure. However, if we continue to defer tasks even after meeting the deadline, there is a chance that some important tasks may not be completed on time, leading to potential issues in the future.",
+    "result": "success",
+    "timestamp": "2026-05-16T09:14:53.127515+00:00"
+  },
+  {
+    "constraints": [
+      {
+        "name": "traffic",
+        "value": "medium",
+        "priority": "medium",
+        "category": "environment"
+      },
+      {
+        "name": "visibility",
+        "value": "good",
+        "priority": "high",
+        "category": "environment"
+      },
+      {
+        "name": "road",
+        "value": "highway",
+        "priority": "medium",
+        "category": "environment"
+      },
+      {
+        "name": "weather",
+        "value": "clear",
+        "priority": "low",
+        "category": "environment"
+      },
+      {
+        "name": "safety",
+        "value": "normal",
+        "priority": "high",
+        "category": "safety"
+      }
+    ],
+    "action": "overtake",
+    "goal": "reach destination faster",
+    "verdict": "conditional_yes",
+    "confidence": 0.725,
+    "explanation": "The decision to overtake in these conditions is beneficial as visibility is good, safety is normal, and there are no blind turns or high traffic ahead. However, if visibility were to decrease or safety were compromised, the risk of an accident would increase.",
+    "result": "success",
+    "timestamp": "2026-05-16T09:16:31.463430+00:00"
+  },
+  {
+    "constraints": [
+      {
+        "name": "memory",
+        "value": "high",
+        "priority": "medium",
+        "category": "resource"
+      },
+      {
+        "name": "time_critical",
+        "value": "yes",
+        "priority": "high",
+        "category": "environment"
+      },
+      {
+        "name": "user_priority",
+        "value": "high",
+        "priority": "high",
+        "category": "environment"
+      },
+      {
+        "name": "cpu_load",
+        "value": "medium",
+        "priority": "medium",
+        "category": "environment"
+      },
+      {
+        "name": "queue_depth",
+        "value": "large",
+        "priority": "medium",
+        "category": "environment"
+      }
+    ],
+    "action": "defer_low_priority",
+    "goal": "meet the deadline without system failure",
+    "verdict": "yes",
+    "confidence": 0.75,
+    "explanation": "This decision reasoning assistant helps users make informed decisions by providing clear explanations of their actions, including why they are beneficial or carry risks. It also considers various constraints and valid conditions to ensure the best possible outcome for the user's goals.",
+    "result": "success",
+    "timestamp": "2026-05-16T09:16:55.929276+00:00"
+  }
+]

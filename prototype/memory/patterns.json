@@ -1,0 +1,30 @@
+[
+  {
+    "constraint_signature": {
+      "traffic": "medium",
+      "visibility": "good",
+      "road": "highway",
+      "weather": "clear",
+      "safety": "normal"
+    },
+    "recommended_action": "overtake",
+    "success_rate": 1.0,
+    "sample_count": 2,
+    "avg_confidence": 0.725,
+    "consolidated_at": "2026-05-16T09:16:55.930583+00:00"
+  },
+  {
+    "constraint_signature": {
+      "memory": "high",
+      "time_critical": "yes",
+      "user_priority": "high",
+      "cpu_load": "medium",
+      "queue_depth": "large"
+    },
+    "recommended_action": "defer_low_priority",
+    "success_rate": 1.0,
+    "sample_count": 2,
+    "avg_confidence": 0.75,
+    "consolidated_at": "2026-05-16T09:16:55.930610+00:00"
+  }
+]

@@ -1,0 +1,164 @@
+<svg viewBox="0 0 740 1120" xmlns="http://www.w3.org/2000/svg" font-family="'Courier New', Courier, monospace">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#388bfd"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#56d364"/>
+    </marker>
+    <marker id="arrowOrange" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f0883e"/>
+    </marker>
+  </defs>
+
+  <rect width="740" height="1120" fill="url(#bg2)" rx="12"/>
+  <rect width="740" height="1120" fill="none" stroke="#30363d" stroke-width="1" rx="12"/>
+
+  <!-- Title -->
+  <text x="370" y="38" text-anchor="middle" fill="#58a6ff" font-size="15" font-weight="bold" letter-spacing="3">CDRS — DECISION FLOW</text>
+  <text x="370" y="56" text-anchor="middle" fill="#8b949e" font-size="10" letter-spacing="1">Complete 14-Step Decision Cycle</text>
+  <line x1="40" y1="66" x2="700" y2="66" stroke="#21262d" stroke-width="1"/>
+
+  <!-- Helper macro: step box -->
+  <!-- Steps: x=200, w=340, step heights=52, gap=18 -->
+
+  <!-- INPUT -->
+  <rect x="270" y="80" width="200" height="38" rx="19" fill="#21262d" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="370" y="104" text-anchor="middle" fill="#58a6ff" font-size="11" font-weight="bold" letter-spacing="1">INPUT SITUATION</text>
+  <line x1="370" y1="118" x2="370" y2="136" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 1 -->
+  <rect x="160" y="138" width="420" height="48" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="138" width="5" height="48" rx="2" fill="#79c0ff"/>
+  <text x="176" y="158" fill="#79c0ff" font-size="9" font-weight="bold">STEP 1</text>
+  <text x="176" y="175" fill="#cdd9e5" font-size="10.5" font-weight="bold">Extract Constraints</text>
+  <text x="420" y="160" fill="#8b949e" font-size="9" text-anchor="end">environment · limits · priorities · risk</text>
+  <text x="420" y="176" fill="#8b949e" font-size="9" text-anchor="end">Layer 1: ConstraintExtractor</text>
+  <line x1="370" y1="186" x2="370" y2="204" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="160" y="206" width="420" height="48" rx="6" fill="#1c2128" stroke="#f0883e" stroke-width="1.5"/>
+  <rect x="160" y="206" width="5" height="48" rx="2" fill="#f0883e"/>
+  <text x="176" y="226" fill="#f0883e" font-size="9" font-weight="bold">STEP 2  ★</text>
+  <text x="176" y="243" fill="#cdd9e5" font-size="10.5" font-weight="bold">Run WH-Chain</text>
+  <text x="420" y="220" fill="#8b949e" font-size="9" text-anchor="end">WHY → WHAT → WHO</text>
+  <text x="420" y="232" fill="#8b949e" font-size="9" text-anchor="end">→ WHEN → WHERE → HOW</text>
+  <text x="420" y="248" fill="#f0883e" font-size="9" text-anchor="end">HOW always last</text>
+  <line x1="370" y1="254" x2="370" y2="272" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 3 -->
+  <rect x="160" y="274" width="420" height="48" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="274" width="5" height="48" rx="2" fill="#56d364"/>
+  <text x="176" y="294" fill="#56d364" font-size="9" font-weight="bold">STEP 3</text>
+  <text x="176" y="311" fill="#cdd9e5" font-size="10.5" font-weight="bold">Retrieve Past Patterns</text>
+  <text x="420" y="296" fill="#8b949e" font-size="9" text-anchor="end">constraint-based similarity</text>
+  <text x="420" y="312" fill="#8b949e" font-size="9" text-anchor="end">ConstraintMatcher · PatternStore</text>
+  <line x1="370" y1="322" x2="370" y2="340" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="160" y="342" width="420" height="48" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="342" width="5" height="48" rx="2" fill="#d2a8ff"/>
+  <text x="176" y="362" fill="#d2a8ff" font-size="9" font-weight="bold">STEP 4</text>
+  <text x="176" y="379" fill="#cdd9e5" font-size="10.5" font-weight="bold">Generate Possible Actions</text>
+  <text x="420" y="364" fill="#8b949e" font-size="9" text-anchor="end">candidate actions with</text>
+  <text x="420" y="380" fill="#8b949e" font-size="9" text-anchor="end">outcome scores + risk values</text>
+  <line x1="370" y1="390" x2="370" y2="408" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 5 -->
+  <rect x="160" y="410" width="420" height="48" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="410" width="5" height="48" rx="2" fill="#79c0ff"/>
+  <text x="176" y="430" fill="#79c0ff" font-size="9" font-weight="bold">STEP 5</text>
+  <text x="176" y="447" fill="#cdd9e5" font-size="10.5" font-weight="bold">Predict Outcomes per Action</text>
+  <text x="420" y="432" fill="#8b949e" font-size="9" text-anchor="end">expected benefit score</text>
+  <text x="420" y="448" fill="#8b949e" font-size="9" text-anchor="end">Evaluator (outcome scoring)</text>
+  <line x1="370" y1="458" x2="370" y2="476" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 6 -->
+  <rect x="160" y="478" width="420" height="48" rx="6" fill="#1c2128" stroke="#ff7b72" stroke-width="1"/>
+  <rect x="160" y="478" width="5" height="48" rx="2" fill="#ff7b72"/>
+  <text x="176" y="498" fill="#ff7b72" font-size="9" font-weight="bold">STEP 6</text>
+  <text x="176" y="515" fill="#cdd9e5" font-size="10.5" font-weight="bold">Evaluate Risks + Failure Conditions</text>
+  <text x="420" y="500" fill="#8b949e" font-size="9" text-anchor="end">failure probability · severity</text>
+  <text x="420" y="516" fill="#8b949e" font-size="9" text-anchor="end">importance weighting</text>
+  <line x1="370" y1="526" x2="370" y2="544" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 7 -->
+  <rect x="160" y="546" width="420" height="48" rx="6" fill="#1c2128" stroke="#ffa657" stroke-width="1.5"/>
+  <rect x="160" y="546" width="5" height="48" rx="2" fill="#ffa657"/>
+  <text x="176" y="566" fill="#ffa657" font-size="9" font-weight="bold">STEP 7</text>
+  <text x="176" y="583" fill="#cdd9e5" font-size="10.5" font-weight="bold">Construct WHY Dynamically</text>
+  <text x="420" y="560" fill="#8b949e" font-size="9" text-anchor="end">benefit · risk · condition · failure</text>
+  <text x="420" y="572" fill="#ffa657" font-size="9" text-anchor="end">WHY = f(outcomes, constraints,</text>
+  <text x="420" y="584" fill="#ffa657" font-size="9" text-anchor="end">risks, goals, timing)</text>
+  <line x1="370" y1="594" x2="370" y2="612" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 8 -->
+  <rect x="160" y="614" width="420" height="48" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="614" width="5" height="48" rx="2" fill="#79c0ff"/>
+  <text x="176" y="634" fill="#79c0ff" font-size="9" font-weight="bold">STEP 8</text>
+  <text x="176" y="651" fill="#cdd9e5" font-size="10.5" font-weight="bold">Assign Importance Weights</text>
+  <text x="420" y="636" fill="#8b949e" font-size="9" text-anchor="end">high=10 · medium=5 · low=2</text>
+  <text x="420" y="652" fill="#8b949e" font-size="9" text-anchor="end">safety dominates speed</text>
+  <line x1="370" y1="662" x2="370" y2="680" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 9 -->
+  <rect x="160" y="682" width="420" height="48" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="682" width="5" height="48" rx="2" fill="#d2a8ff"/>
+  <text x="176" y="702" fill="#d2a8ff" font-size="9" font-weight="bold">STEP 9</text>
+  <text x="176" y="719" fill="#cdd9e5" font-size="10.5" font-weight="bold">Compare Benefit vs Risk</text>
+  <text x="420" y="704" fill="#8b949e" font-size="9" text-anchor="end">score = outcome_score</text>
+  <text x="420" y="716" fill="#8b949e" font-size="9" text-anchor="end">− (risk × safety_weight)</text>
+  <text x="420" y="728" fill="#8b949e" font-size="9" text-anchor="end">Evaluator.score_all()</text>
+  <line x1="370" y1="730" x2="370" y2="748" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Decision Diamond -->
+  <polygon points="370,752 490,796 370,840 250,796" fill="#1f4e79" stroke="#58a6ff" stroke-width="1.5"/>
+  <text x="370" y="790" text-anchor="middle" fill="#cdd9e5" font-size="9.5" font-weight="bold">STEP 10</text>
+  <text x="370" y="803" text-anchor="middle" fill="#58a6ff" font-size="9.5" font-weight="bold">PRODUCE DECISION</text>
+  <!-- verdict labels -->
+  <text x="516" y="780" fill="#56d364" font-size="9">YES</text>
+  <text x="516" y="793" fill="#56d364" font-size="9">confidence</text>
+  <text x="200" y="780" fill="#ff7b72" font-size="9" text-anchor="end">NO /</text>
+  <text x="200" y="793" fill="#ff7b72" font-size="9" text-anchor="end">CONDITIONAL</text>
+  <line x1="370" y1="840" x2="370" y2="858" stroke="#56d364" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+
+  <!-- Step 11 -->
+  <rect x="160" y="860" width="420" height="38" rx="6" fill="#1c2128" stroke="#56d364" stroke-width="1"/>
+  <rect x="160" y="860" width="5" height="38" rx="2" fill="#56d364"/>
+  <text x="176" y="876" fill="#56d364" font-size="9" font-weight="bold">STEP 11</text>
+  <text x="176" y="891" fill="#cdd9e5" font-size="10.5" font-weight="bold">Execute Action</text>
+  <line x1="370" y1="898" x2="370" y2="916" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 12 -->
+  <rect x="160" y="918" width="420" height="38" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="918" width="5" height="38" rx="2" fill="#79c0ff"/>
+  <text x="176" y="934" fill="#79c0ff" font-size="9" font-weight="bold">STEP 12</text>
+  <text x="176" y="949" fill="#cdd9e5" font-size="10.5" font-weight="bold">Observe Actual Result</text>
+  <line x1="370" y1="956" x2="370" y2="974" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 13 -->
+  <rect x="160" y="976" width="420" height="38" rx="6" fill="#1c2128" stroke="#388bfd" stroke-width="1"/>
+  <rect x="160" y="976" width="5" height="38" rx="2" fill="#ffa657"/>
+  <text x="176" y="992" fill="#ffa657" font-size="9" font-weight="bold">STEP 13</text>
+  <text x="176" y="1007" fill="#cdd9e5" font-size="10.5" font-weight="bold">Store Experience</text>
+  <text x="576" y="998" fill="#8b949e" font-size="9" text-anchor="end">ExperienceStore</text>
+  <line x1="370" y1="1014" x2="370" y2="1032" stroke="#388bfd" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Step 14 -->
+  <rect x="160" y="1034" width="420" height="38" rx="6" fill="#1c2128" stroke="#f0883e" stroke-width="1.5"/>
+  <rect x="160" y="1034" width="5" height="38" rx="2" fill="#f0883e"/>
+  <text x="176" y="1050" fill="#f0883e" font-size="9" font-weight="bold">STEP 14 — SCHEDULED</text>
+  <text x="176" y="1065" fill="#cdd9e5" font-size="10.5" font-weight="bold">Consolidate Patterns (Dreaming Layer)</text>
+  <text x="576" y="1060" fill="#8b949e" font-size="9" text-anchor="end">PatternStore</text>
+
+  <!-- Feedback loop arrow -->
+  <path d="M160,1053 Q60,1053 60,150 Q60,80 160,80" fill="none" stroke="#21262d" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <polygon points="160,76 152,86 168,86" fill="#21262d"/>
+  <text x="44" y="580" fill="#484f58" font-size="9" text-anchor="middle" transform="rotate(-90 44 580)">FEEDBACK LOOP</text>
+
+  <text x="370" y="1112" text-anchor="middle" fill="#484f58" font-size="9">CDRS · Sami Ahmed Yusuf Kolarkar · 2026 · Apache 2.0</text>
+</svg>

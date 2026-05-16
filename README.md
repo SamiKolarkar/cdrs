@@ -196,4 +196,11 @@ python3 -m prototype.main
 
 ## License
 
-MIT License
+Apache License 2.0
+
+
+---
+
+## License
+
+Licensed under the Apache License 2.0.
